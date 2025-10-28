@@ -44,7 +44,7 @@ from torch.utils.data import DataLoader, TensorDataset
 #         return x
 
 class HourlyStepsLSTM(nn.Module):
-    def __init__(self, input_dim: int = 3):
+    def __init__(self, input_dim: int = 3, output_size: int = 1):
         super().__init__()
         self.lstm = nn.LSTM(
             input_size=input_dim,
