@@ -195,7 +195,7 @@ def gl_model_torch_validation(batch_size):
     WINDOW_SIZE = 30
     CSV_PATH = "/app/code/data/hourlySteps_merged.csv"
 
-    train_loader, val_loader, test_loader, meta = load_and_prepare(CSV_PATH, WINDOW_SIZE)
+    train_loader, val_loader, test_loader, meta = load_and_prepare(CSV_PATH, WINDOW_SIZE, batch_size)
     
     gl_val_loader = val_loader
 
