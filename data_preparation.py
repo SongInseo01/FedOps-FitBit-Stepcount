@@ -163,7 +163,7 @@ def load_partition(dataset, validation_split, batch_size):
 
     # iscal setting
     WINDOW_SIZE = 30
-    CSV_PATH = "/home/ubuntu/isfolder/fl_agent_paper/fedops_isstep/tmp/data/hourlySteps_merged.csv"
+    CSV_PATH = "./data/hourlySteps_merged.csv"
     train_loader, val_loader, test_loader, meta = load_and_prepare(CSV_PATH, WINDOW_SIZE, batch_size)
 
 
